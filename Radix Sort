@@ -5,7 +5,6 @@ import pandas as pd
 #generate 10 element array of random numbers between 100 and 499
 unsorted = numpy.random.randint(100,500,size=10)
 
-#hardcode
 unsorted = [313, 295, 238, 437 ,317, 102, 324, 198, 121, 303]
 
 #generate output array of same size as unsorted

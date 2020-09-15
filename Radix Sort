@@ -1,0 +1,32 @@
+#Import required Libraries
+import numpy as np
+import pandas as pd
+
+#generate 10 element array of random numbers between 100 and 499
+unsorted = numpy.random.randint(100,500,size=10)
+
+#hardcode
+unsorted = [313, 295, 238, 437 ,317, 102, 324, 198, 121, 303]
+
+#generate output array of same size as unsorted
+counts = numpy.zeros(len(unsorted))
+
+print(unsorted)
+print(sorted)
+
+#Build Radix Sort function
+
+digits = []
+
+#Get lowest digit of each item in array
+for i in range(0,len(unsorted)):
+    x = unsorted[i] % 10
+    digits.append(x)
+    print(x)
+    counts[x-1] += 1
+
+#Compute prefix sums
+prefix_sums = list(accumulate(counts)))
+
+for i in range(0,len(digits):
+    t = digits[len(digits)-i-1]
